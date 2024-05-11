@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 00
   members: []
-  foobs: []
+  foobs:
+  - {fileID: 11400000, guid: f8256937586b5c74bafa88b29e1212b4, type: 2}
   minimumScore: 1000
   timeLimit: 60
-  beltSpeed: 100
-  boardTiles: {x: 4, y: 8}
-  boardSize: {x: 0.9, y: 0.8}
+  beltSpeed: 6.5
+  boardTiles: {x: 10, y: 8}
+  boardSize: {x: 0.84, y: 0.8}

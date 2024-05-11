@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Bread
   m_EditorClassIdentifier: 
   name: 
-  foodSprite: {fileID: 0}
+  foobSprite: {fileID: 668122344932515806, guid: 818fd2b994860794c898ab2204ad150a, type: 3}
   backgroundSprite: {fileID: 0}

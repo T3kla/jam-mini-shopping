@@ -1,12 +1,16 @@
 using System.Collections.Generic;
+using Data;
 using UnityEngine;
 
 public class Board : MonoBehaviour
 {
+    public Belt belt = null;
+    
     public GameObject tilePrefab = null;
     public List<RoundData> rounds = null;
 
     private GameObject[,] _tiles = null;
+    private RoundData _currentRound = null;
 
     private void Awake()
     {
@@ -22,6 +26,7 @@ public class Board : MonoBehaviour
                 Destroy(tile);
 
         var data = rounds[round];
+        _currentRound = data;
 
         var width = data.boardTiles.x;
         var height = data.boardTiles.y;
@@ -41,5 +46,7 @@ public class Board : MonoBehaviour
             tile.transform.parent = transform;
             _tiles[x, y] = tile;
         }
+        
+        belt.StartDealingCards(data.foobs, data.beltSpeed);
     }
 }
