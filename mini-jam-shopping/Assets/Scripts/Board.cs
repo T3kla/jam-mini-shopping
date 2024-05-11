@@ -10,7 +10,7 @@ public class Board : MonoBehaviour
 
     private GameObject[,] tiles = null;
     
-    private void Start()
+    private void Awake()
     {
         tiles = new GameObject[width, height];
         

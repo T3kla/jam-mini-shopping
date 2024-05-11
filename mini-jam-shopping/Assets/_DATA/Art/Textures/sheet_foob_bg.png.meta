@@ -163,15 +163,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Foobs_Template_0
+      name: spr_foob_bg_05
       rect:
         serializedVersion: 2
         x: 0
-        y: 287
-        width: 97
-        height: 97
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,15 +185,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Foobs_Template_1
+      name: spr_foob_bg_00
       rect:
         serializedVersion: 2
-        x: 96
-        y: 351
-        width: 34
-        height: 33
+        x: 97
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,15 +207,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Foobs_Template_2
+      name: spr_foob_bg_01
       rect:
         serializedVersion: 2
-        x: 129
-        y: 319
-        width: 34
-        height: 65
+        x: 130
+        y: 320
+        width: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,15 +229,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Foobs_Template_3
+      name: spr_foob_bg_03
       rect:
         serializedVersion: 2
-        x: 162
-        y: 287
-        width: 34
-        height: 97
+        x: 163
+        y: 288
+        width: 33
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -251,15 +251,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Foobs_Template_4
+      name: spr_foob_bg_04
       rect:
         serializedVersion: 2
         x: 195
-        y: 287
-        width: 66
-        height: 97
+        y: 288
+        width: 65
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -273,15 +273,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Foobs_Template_5
+      name: spr_foob_bg_06
       rect:
         serializedVersion: 2
-        x: 260
-        y: 287
-        width: 98
-        height: 97
+        x: 261
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,15 +295,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Foobs_Template_6
+      name: spr_foob_bg_07
       rect:
         serializedVersion: 2
         x: 0
-        y: 222
-        width: 65
-        height: 66
+        y: 223
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -317,15 +317,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Foobs_Template_7
+      name: spr_foob_bg_08
       rect:
         serializedVersion: 2
-        x: 64
-        y: 222
-        width: 66
-        height: 66
+        x: 65
+        y: 223
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -339,15 +339,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Foobs_Template_8
+      name: spr_foob_bg_09
       rect:
         serializedVersion: 2
-        x: 129
-        y: 222
-        width: 98
-        height: 66
+        x: 130
+        y: 223
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,7 +364,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fa4ce153e3ac506428b5516db4f18061
     internalID: 0
     vertices: []
     indices: 
@@ -372,15 +372,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Foobs_Template_0: -3007279168975236772
-      Foobs_Template_1: 1021617605548537519
-      Foobs_Template_2: 439441532012809497
-      Foobs_Template_3: 8954456101442539152
-      Foobs_Template_4: 5699000673837530843
-      Foobs_Template_5: 5471960884774641891
-      Foobs_Template_6: 7918674830133321283
-      Foobs_Template_7: -144680613281133517
-      Foobs_Template_8: 668122344932515806
+      spr_foob_bg_00: 1021617605548537519
+      spr_foob_bg_01: 439441532012809497
+      spr_foob_bg_03: 8954456101442539152
+      spr_foob_bg_04: 5699000673837530843
+      spr_foob_bg_05: -3007279168975236772
+      spr_foob_bg_06: 5471960884774641891
+      spr_foob_bg_07: 7918674830133321283
+      spr_foob_bg_08: -144680613281133517
+      spr_foob_bg_09: 668122344932515806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
