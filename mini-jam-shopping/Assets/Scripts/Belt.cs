@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Data;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Belt : MonoBehaviour
@@ -38,8 +37,6 @@ public class Belt : MonoBehaviour
             if (!_isDealing) break;
             
             await Awaitable.WaitForSecondsAsync(1 / spawnRate / beltSpeed);
-            
-            Debug.Log("Belt Tick");
             
             var foob = foobs[Random.Range(0, foobs.Count)];
             var card = Instantiate(foobCardPrefab, transform.position, Quaternion.identity);

@@ -16,8 +16,12 @@ MonoBehaviour:
   members: []
   foobs:
   - {fileID: 11400000, guid: f8256937586b5c74bafa88b29e1212b4, type: 2}
+  - {fileID: 11400000, guid: 476d4c9477f706440a23519780b3f904, type: 2}
+  - {fileID: 11400000, guid: 6e103cce98605064e8d2927ae7080bea, type: 2}
+  - {fileID: 11400000, guid: a03542f864cd9a5448e0b39dd2232e5b, type: 2}
+  - {fileID: 11400000, guid: 2bb2cc4e09b99014db26b1a21aea4146, type: 2}
   minimumScore: 1000
   timeLimit: 60
-  beltSpeed: 6.5
+  beltSpeed: 1.5
   boardTiles: {x: 10, y: 8}
-  boardSize: {x: 0.84, y: 0.8}
+  boardSize: {x: 0.8, y: 0.8}

@@ -17,6 +17,13 @@ public class Board : MonoBehaviour
         LoadRound(0);
     }
 
+    private void Update()
+    {
+        if (Input.GetMouseButtonUp(0))
+            if (FoobCard.selected)
+                Debug.Log("hola");
+    }
+
     private void LoadRound(int round)
     {
         if (rounds.Count <= round) return;
