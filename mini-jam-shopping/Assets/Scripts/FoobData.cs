@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Foobs", menuName = "Foobs/Foobs", order = 1)]
+[CreateAssetMenu(fileName = "Foobs", menuName = "=￣ω￣=/Foob", order = 1)]
 public class Foobs : ScriptableObject
 {
     public new string name = null;
