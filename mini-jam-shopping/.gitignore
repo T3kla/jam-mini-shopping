@@ -27,6 +27,8 @@
 .vs/
 .idea/
 
+*.aseprite
+
 # Gradle cache directory
 .gradle/
 
