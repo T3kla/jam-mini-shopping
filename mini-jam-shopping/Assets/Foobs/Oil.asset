@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 875c00f4e8134964a8830b5342348e3a, type: 3}
-  m_Name: Bread
+  m_Name: Oil
   m_EditorClassIdentifier: 
-  name: Bread
-  foobSprite: {fileID: 1350959264, guid: 818fd2b994860794c898ab2204ad150a, type: 3}
-  shapeSprite: {fileID: 625528556733441334, guid: d5c38a6c489a8cd4fbb63336d45f7feb, type: 3}
+  name: Oil
+  foobSprite: {fileID: 888782828, guid: 818fd2b994860794c898ab2204ad150a, type: 3}
+  shapeSprite: {fileID: 1107537557, guid: d5c38a6c489a8cd4fbb63336d45f7feb, type: 3}
   shape0: {x: 0, y: 1, z: 0}
-  shape1: {x: 0, y: 1, z: 0}
+  shape1: {x: 1, y: 1, z: 1}
   shape2: {x: 0, y: 1, z: 0}

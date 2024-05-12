@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 875c00f4e8134964a8830b5342348e3a, type: 3}
   m_Name: Watermelon
   m_EditorClassIdentifier: 
-  name: 
-  foobSprite: {fileID: -144680613281133517, guid: 818fd2b994860794c898ab2204ad150a, type: 3}
-  shapeSprite: {fileID: 0}
+  name: Watermelon
+  foobSprite: {fileID: 1112651517, guid: 818fd2b994860794c898ab2204ad150a, type: 3}
+  shapeSprite: {fileID: 6212479775918298307, guid: d5c38a6c489a8cd4fbb63336d45f7feb, type: 3}
   shape0: {x: 0, y: 1, z: 1}
   shape1: {x: 0, y: 1, z: 1}
   shape2: {x: 0, y: 0, z: 0}
