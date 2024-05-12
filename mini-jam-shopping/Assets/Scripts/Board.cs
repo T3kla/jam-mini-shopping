@@ -64,36 +64,83 @@ public class Board : MonoBehaviour
         foreach (var t in _tiles)
             t.SpriteRenderer.color = Color.white;
 
+        CanPlace();
+    }
+
+    public bool CanPlace()
+    {
+        var canPlace = true;
+
         var tile = Tile.selected;
         var foob = FoobCard.selected;
 
         if (!tile || !foob)
-            return;
+            return false;
 
-        // Get the collision matrix of the current foob
+        var mtxShape = GetShape(foob);
+        var mtxTiles = GetTiles(tile.Position);
 
-        var mtx = new bool[3, 3];
+        if (mtxShape == null || mtxTiles == null)
+            return false;
 
-        mtx[0, 0] = foob.Data.shape0.x == 1;
-        mtx[0, 1] = foob.Data.shape0.y == 1;
-        mtx[0, 2] = foob.Data.shape0.z == 1;
-        mtx[1, 0] = foob.Data.shape1.x == 1;
-        mtx[1, 1] = foob.Data.shape1.y == 1;
-        mtx[1, 2] = foob.Data.shape1.z == 1;
-        mtx[2, 0] = foob.Data.shape2.x == 1;
-        mtx[2, 1] = foob.Data.shape2.y == 1;
-        mtx[2, 2] = foob.Data.shape2.z == 1;
+        for (var x = 0; x < 3; x++)
+        for (var y = 0; y < 3; y++)
+            if (mtxShape[x, y] && (!mtxTiles[x, y] || mtxTiles[x, y].IsOccupied))
+                canPlace = false;
+
+        for (var x = 0; x < 3; x++)
+        for (var y = 0; y < 3; y++)
+            if (mtxTiles[x, y] && mtxShape[x, y])
+                mtxTiles[x, y].SpriteRenderer.color = canPlace ? Color.green : Color.red;
+
+        return canPlace;
+    }
+
+    public bool[,] GetShape(FoobCard card)
+    {
+        var arr = new bool[3, 3];
+
+        arr[0, 0] = card.Data.shape0.x == 1;
+        arr[0, 1] = card.Data.shape0.y == 1;
+        arr[0, 2] = card.Data.shape0.z == 1;
+        arr[1, 0] = card.Data.shape1.x == 1;
+        arr[1, 1] = card.Data.shape1.y == 1;
+        arr[1, 2] = card.Data.shape1.z == 1;
+        arr[2, 0] = card.Data.shape2.x == 1;
+        arr[2, 1] = card.Data.shape2.y == 1;
+        arr[2, 2] = card.Data.shape2.z == 1;
 
         // If the card is rotated, rotate the matrix
 
-        var rot = foob.Rotation;
+        var rot = card.Rotation;
 
         for (var i = 0; i < rot; ++i)
         for (var j = 2; j >= 0; --j)
         for (var k = 0; k < 3; ++k)
-            mtx[k, 2 - j] = mtx[j, k];
+            arr[k, 2 - j] = arr[j, k];
 
-        // Search adjacent tiles for a match
-        
+        return arr;
+    }
+
+    public Tile[,] GetTiles(Vector2Int coords)
+    {
+        var tile = Tile.selected;
+        var arr = new Tile[3, 3];
+
+        for (var x = -1; x <= 1; x++)
+        for (var y = -1; y <= 1; y++)
+        {
+            var posX = tile.Position.x + x;
+            var posY = tile.Position.y + y;
+
+            if (posX < 0 || posX >= _currentRound.boardTiles.x)
+                arr[x + 1, y + 1] = null;
+            else if (posY < 0 || posY >= _currentRound.boardTiles.y)
+                arr[x + 1, y + 1] = null;
+            else
+                arr[x + 1, y + 1] = _tiles[posX, posY];
+        }
+
+        return arr;
     }
 }

@@ -8,10 +8,10 @@ public class FoobCard : MonoBehaviour
 
     public int Rotation
     {
-        get => _rotation;
-        set => _rotation = value % 4;
+        get => _rotation % 4;
+        set => _rotation = value;
     }
-    private int _rotation = 40;
+    private int _rotation = 400;
     
     private SpriteRenderer _spriteRenderer = null;
     private PolygonCollider2D _polygonCollider = null;

@@ -10,6 +10,8 @@ public class Tile : MonoBehaviour
 
     [NonSerialized] public SpriteRenderer SpriteRenderer = null;
     [NonSerialized] public PolygonCollider2D PolygonCollider = null;
+    
+    [NonSerialized] public bool IsOccupied = false;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     private static void ResetStatics()
@@ -23,18 +25,20 @@ public class Tile : MonoBehaviour
         PolygonCollider = GetComponent<PolygonCollider2D>();
     }
 
-    private void OnMouseEnter()
+    private async void OnMouseEnter()
     {
-        Board.UpdateTileColors();
+        await Awaitable.NextFrameAsync();
 
         selected = this;
+
+        Board.UpdateTileColors();
     }
 
     private void OnMouseExit()
     {
-        Board.UpdateTileColors();
-
         if (selected == this)
             selected = null;
+        
+        Board.UpdateTileColors();
     }
 }
