@@ -40,7 +40,8 @@ public class Belt : MonoBehaviour
             
             var foob = foobs[Random.Range(0, foobs.Count)];
             var card = Instantiate(foobCardPrefab, transform.position, Quaternion.identity);
-            card.Init(foob, beltSpeed);
+            var rot = Random.Range(0, 3);
+            card.Init(foob, rot, beltSpeed);
             _cards.Add(card);
         }
     }
